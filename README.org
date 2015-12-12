@@ -21,3 +21,6 @@ Currently, they're designed for use with NodeMCU.
 
   Get luatool from here: [[https://github.com/4refr0nt/luatool]].
 
+  ~init.lua~ is obviously not provided since it contains my home router credentials.
+  Just rename ~init.lua.tpl~ to ~init.lua~ and replace placeholder values with your own credential.
+
