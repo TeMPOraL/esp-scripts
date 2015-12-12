@@ -5,3 +5,19 @@ A collection of scripts I use for home automation purposes for ESP8266-based mod
 
 Currently, they're designed for use with NodeMCU.
 
+* Instructions
+
+  Current idea is that you upload a default ~init.lua~ startup script and another device-specific script.
+  ~init.lua~ connects to the wireless network and executes another script, called ~startup.lua~.
+
+  Example use:
+
+  #+BEGIN_EXAMPLE
+  ./luatool.py --port /dev/ttyUSB0 --src ../../home-automation/esp-scripts/test-server.lua --dest startup.lua 
+  ./luatool.py --port /dev/ttyUSB0 --src ../../home-automation/esp-scripts/init.lua --dest init.lua --restart
+  #+END_EXAMPLE
+
+  In the future I'll provide a proper one-liner.
+
+  Get luatool from here: [[https://github.com/4refr0nt/luatool]].
+
