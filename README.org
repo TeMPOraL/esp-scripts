@@ -1,0 +1,7 @@
+#+title: ESP8266 scripts
+#+startup: hidestars
+
+A collection of scripts I use for home automation purposes for ESP8266-based modules.
+
+Currently, they're designed for use with NodeMCU.
+
